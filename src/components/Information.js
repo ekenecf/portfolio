@@ -1,3 +1,5 @@
+import image1 from '../assets/calculator.png'
+
 const info = {
   miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
     {
@@ -84,7 +86,7 @@ const info = {
       title: 'Project 5',
       live: 'https://ekenemathmagician.netlify.app/',
       source: 'https://github.com/ekenecf/math-magician',
-      // image: mock5
+      image: image1
     },
   ],
 };
