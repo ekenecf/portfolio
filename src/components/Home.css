@@ -1,11 +1,4 @@
 .home_card {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #000;
-  width: 100%;
-  position: absolute;
-  top: 10%; */
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -16,13 +9,10 @@
 }
 
 .developer_short_detail {
-  /* background: red; */
   width: 29%;
   height: 50vh;
   display: flex;
   flex-direction: column;
-
-  /* row-gap: 2%; */
   margin-top: 3%;
 }
 
@@ -141,11 +131,11 @@
 
   .developer_image {
     width: 50%;
-    height: 35vh;
+    height: 32vh;
   }
 
   .developer_image img {
-    height: 34vh;
+    height: 31vh;
   }
 
   .developer_short_detail {
@@ -158,5 +148,10 @@
 
   .developer_short_detail h2 {
     font-size: 16px;
+  }
+
+  .developers_socials {
+    gap: 20%;
+    margin-left: 16%;
   }
 }

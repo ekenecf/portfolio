@@ -11,10 +11,10 @@ function MobileMenu(props) {
     <div className="mobile">
       <div className="Mobile-List">
         <NavLink to="/">
-          <div role="button" tabIndex={0} onClick={CancelMenu} onKeyDown={CancelMenu}>Home</div>
+          <div className="home" role="button" tabIndex={0} onClick={CancelMenu} onKeyDown={CancelMenu}>Home</div>
         </NavLink>
         <NavLink to="/about">
-          <div role="button" tabIndex={0} onClick={CancelMenu} onKeyDown={CancelMenu}>About me</div>
+          <div className="about" role="button" tabIndex={0} onClick={CancelMenu} onKeyDown={CancelMenu}>About me</div>
         </NavLink>
         <NavLink to="/portfolio">
           <div className="link-remove" role="button" tabIndex={0} onClick={CancelMenu} onKeyDown={CancelMenu}>Portfolio</div>

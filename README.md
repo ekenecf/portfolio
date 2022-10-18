@@ -9,7 +9,7 @@ This is my portfolio site to provide with a personal record of my success or imp
 
 ## Live Link
 
-[Live Link](sentayhu-berhanu.netlify.app/)
+[Live Link](https://app.netlify.com/sites/startling-beignet-56b4c5)
 
 ## Built With
 
@@ -76,8 +76,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 👤 **Nwachukwu Ekene**
 
-- GitHub: [@ekenecf](https://github.com/ekenecf)
+- GitHub: [ekenecf](https://github.com/ekenecf)
 - LinkedIn: [Nwachukwu-Ekene](https://www.linkedin.com/in/nwachukwuekene/)
+- Twitter: [@ekene070](https://www.twitter.com/ekene070)
 
 
 ## 🤝 Contributing
