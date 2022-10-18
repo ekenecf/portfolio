@@ -130,12 +130,12 @@
   }
 
   .developer_image {
-    width: 50%;
-    height: 32vh;
+    width: 49%;
+    height: 31vh;
   }
 
   .developer_image img {
-    height: 31vh;
+    height: 30vh;
   }
 
   .developer_short_detail {
