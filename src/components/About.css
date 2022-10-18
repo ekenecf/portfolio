@@ -149,13 +149,20 @@
 
 @media screen and (max-width: 768px) {
   .developer_about {
-    margin-left: 5%;
+    margin: 0;
+    padding: 0;
     width: 92%;
-    height: 95vh;
+    height: 58vh;
+    margin-left: 4%;
   }
 
   .developer_detail {
-    height: 100vh;
+    height: max-content;
+  }
+
+  .developer_detail p,
+  .developers_interest_card p {
+    font-family: 'Lato', sans-serif;
   }
 
   .red,
@@ -167,6 +174,10 @@
   .developer_skills {
     width: 93%;
     margin-left: 4%;
+  }
+
+  .developer_skill_detail .proficiency {
+    font-family: 'Lato', sans-serif;
   }
 
   .developers_interest {

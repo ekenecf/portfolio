@@ -15,8 +15,8 @@ function About() {
     <div>
       <div
         className="developer_about"
-        data-aos="zoom-in"
-        data-aos-delay="50"
+        data-aos="zoom-in-up"
+        data-aos-delay="70"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
