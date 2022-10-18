@@ -6,10 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This is my portfolio site to provide with a personal record of my success or improvement in a range of areas.
 
 
-
 ## Live Link
 
-[Live Link](https://app.netlify.com/sites/startling-beignet-56b4c5)
+[Live Link](https://startling-beignet-56b4c5.netlify.app/)
 
 ## Built With
 
