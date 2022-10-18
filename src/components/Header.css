@@ -133,7 +133,9 @@
     }
   }
 
-  .home, .about, .link-remove {
+  .home,
+  .about,
+  .link-remove {
     color: #000;
   }
 }
