@@ -5,6 +5,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Header from './components/Header';
+import Form from './components/Form';
+import './components/Header.css';
 
 function App() {
   const links = [
@@ -23,18 +25,23 @@ function App() {
       to: '/portfolio',
       element: Portfolio,
     },
+    {
+      id: 4,
+      to: '/contactMe',
+      element: Form,
+    },
   ];
   return (
-
-    <Router>
-      <Header />
-      <Routes>
-        {links.map((link) => (
-          <Route key={link.id} exact path={link.to} element={<link.element />} />
-        ))}
-      </Routes>
-    </Router>
-
+    <div className="headerDark">
+      <Router>
+        <Header />
+        <Routes>
+          {links.map((link) => (
+            <Route key={link.id} exact path={link.to} element={<link.element />} />
+          ))}
+        </Routes>
+      </Router>
+    </div>
   );
 }
 export default App;

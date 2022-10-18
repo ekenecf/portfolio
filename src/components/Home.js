@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import './Home.css';
 import info from './Information';
-import myImage from '../assets/image_toptal-removebg-preview1.png';
+import myImage from '../assets/my_image-removebg-preview.png';
 
 function Home() {
   const twitter = () => {
