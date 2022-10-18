@@ -1,12 +1,8 @@
-/* .developers_portfolio_card {
-  background: rgb(181, 160, 160);
-  width: 100%;
-  height: 100vh;
-} */
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .portfolio_card {
   margin: 0;
   padding: 0;
@@ -100,4 +96,17 @@
   font-size: 24px;
   text-align: center;
   color: #414141;
+}
+
+.content button {
+  background: rgb(56, 56, 163);
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  height: 5vh;
+  margin-right: 2%;
+}
+
+.content button:hover {
+  background: #2c73df;
 }

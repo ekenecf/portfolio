@@ -1,12 +1,28 @@
 import React from 'react';
 import uuid from 'react-uuid';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import info from './Information';
 import './About.css';
 
 function About() {
+  AOS.init({
+    duration: 1200,
+  });
+
   return (
     <div>
-      <div className="developer_about">
+      <div
+        className="developer_about"
+        data-aos="zoom-in"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="colors">
           <div className="red" />
           <div className="green" />
@@ -19,7 +35,16 @@ function About() {
 
         </div>
       </div>
-      <div className="developer_skills">
+      <div
+        className="developer_skills"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="colors">
           <div className="red" />
           <div className="green" />
@@ -50,7 +75,16 @@ function About() {
         </div>
 
       </div>
-      <div className="developers_interest">
+      <div
+        className="developers_interest"
+        data-aos="flip-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
         <div className="colors">
           <div className="red" />
           <div className="green" />

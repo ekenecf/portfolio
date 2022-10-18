@@ -7,7 +7,7 @@ import image6 from '../assets/dictionary_online.png';
 import image7 from '../assets/covid19_snapshot.png';
 
 const info = {
-  miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
+  miniBio: [
     {
       id: 1,
       emoji: '☕',
@@ -57,45 +57,45 @@ const info = {
       emoji: '🌶',
     },
   ],
-  portfolio: [ // This is where your portfolio projects will be detailed
+  portfolio: [
     {
-      title: 'Project 1',
-      live: 'https://micro-hotel-reservation.netlify.app/', // this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-      source: 'https://github.com/ekenecf/hotel-reservation-frontend', // this should be a link to the **repository** of the project, where the code is hosted.
+      title: 'Hotel Reservation App',
+      live: 'https://micro-hotel-reservation.netlify.app/',
+      source: 'https://github.com/ekenecf/hotel-reservation-frontend',
       image: image2,
     },
     {
-      title: 'Project 2',
+      title: 'Rails Budget App',
       live: 'https://ekenebudgetapp.herokuapp.com/',
       source: 'https://github.com/ekenecf/Budget-App',
       image: image3,
     },
     {
-      title: 'Project 3',
+      title: 'Space-travel app',
       live: 'https://gorgeous-melba-746edd.netlify.app/',
       source: 'https://github.com/ekenecf/spacex',
       image: image4,
     },
     {
-      title: 'Project 4',
+      title: 'Rails Church Database App',
       live: 'https://stcharlescyon.herokuapp.com/',
       source: 'https://github.com/ekenecf/my-church-app',
       image: image5,
     },
     {
-      title: 'Project 5',
+      title: 'React Dictionary',
       live: 'https://incandescent-puffpuff-380218.netlify.app/',
       source: 'https://github.com/ekenecf/react-dictionary',
       image: image6,
     },
     {
-      title: 'Project 6',
+      title: 'Covid-19 Data tracking App',
       live: 'https://warm-panda-37f6ed.netlify.app/',
       source: 'https://github.com/ekenecf/covid19-datatracking-app',
       image: image7,
     },
     {
-      title: 'Project 7',
+      title: 'Math-magician',
       live: 'https://ekenemathmagician.netlify.app/',
       source: 'https://github.com/ekenecf/math-magician',
       image: image1,

@@ -1,12 +1,20 @@
 import React from 'react';
+// import { NavLink } from 'react-router-dom';
 import uuid from 'react-uuid';
-
-// import myImage from '../assets/calculator.png';
 
 import './Portfolio.css';
 import info from './Information';
 
 function Portfolio() {
+  // const twitter = () => {
+  //   window.location.href = 'https://twitter.com/ekene070';
+  // };
+  // const linkedin = () => {
+  //   window.location.href = 'https://www.linkedin.com/in/nwachukwuekene/';
+  // };
+  // const github = () => {
+  //   window.location.href = 'https://github.com/ekenecf';
+  // };
   return (
     <div className="portfolio">
       {
@@ -26,7 +34,12 @@ function Portfolio() {
                         <h3>
                           {portfolioInfo.title}
                         </h3>
-                        <p>Trust yourself and keep going.</p>
+                        <button type="button" onClick={() => { window.location.href = portfolioInfo.live; }}>
+                          Live Link
+                        </button>
+                        <button type="button" onClick={() => { window.location.href = portfolioInfo.source; }}>
+                          Source Code
+                        </button>
                       </div>
                     </div>
                   </div>

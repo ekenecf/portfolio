@@ -75,7 +75,7 @@
 
 .developer_name {
   background: linear-gradient(#9ca1bd, #1ce6b3);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -131,4 +131,32 @@
 
 .developers_socials h3:hover {
   background: #1f1f1f;
+}
+
+@media screen and (max-width: 768px) {
+  .home_card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .developer_image {
+    width: 50%;
+    height: 35vh;
+  }
+
+  .developer_image img {
+    height: 34vh;
+  }
+
+  .developer_short_detail {
+    width: 55%;
+  }
+
+  .developer_short_detail h1 {
+    font-size: 25px;
+  }
+
+  .developer_short_detail h2 {
+    font-size: 16px;
+  }
 }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import MobileMenu from './MobileMenu';
 
 import './Header.css';
 
@@ -8,13 +10,8 @@ function Header() {
 
   const handleChange = () => {
     setchangeMode(!changeMode);
-    // document.body.style.background = 'red';
     return changeMode;
   };
-
-  // useEffect(() => {
-  //   document.body.style.backgroundColor = 'salmon';
-  // }, []);
 
   console.log(changeMode);
 
@@ -37,11 +34,29 @@ function Header() {
               Portfolio
             </NavLink>
           </li>
-          {
-            changeMode ? <span className="toggleWhite" onClick={handleChange} onKeyDown={handleChange} aria-label="Full Moon" role="presentation">🌑</span>
-              : <span className="toggleDark" onClick={handleChange} onKeyDown={handleChange} aria-label="New Moon" role="presentation"> 🌕 </span>
-          }
+          <li>
+            <NavLink to="/contactMe">
+              Contact Me
+            </NavLink>
+          </li>
+
         </ul>
+        <div className="hamburger">
+          <div role="button" tabIndex={0} onClick={handleChange} onKeyDown={handleChange}>
+            {
+              changeMode ? '' : <GiHamburgerMenu />
+            }
+          </div>
+        </div>
+        {
+            changeMode ? (
+              <div className="MobileContainer">
+                <MobileMenu CancelMenu={handleChange} />
+              </div>
+            )
+              : null
+
+          }
       </nav>
     </header>
   );
