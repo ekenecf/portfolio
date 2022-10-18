@@ -13,8 +13,6 @@ function Header() {
     return changeMode;
   };
 
-  console.log(changeMode);
-
   return (
     <header>
       <nav className="navigation">
