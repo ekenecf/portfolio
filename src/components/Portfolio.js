@@ -6,15 +6,6 @@ import './Portfolio.css';
 import info from './Information';
 
 function Portfolio() {
-  // const twitter = () => {
-  //   window.location.href = 'https://twitter.com/ekene070';
-  // };
-  // const linkedin = () => {
-  //   window.location.href = 'https://www.linkedin.com/in/nwachukwuekene/';
-  // };
-  // const github = () => {
-  //   window.location.href = 'https://github.com/ekenecf';
-  // };
   return (
     <div className="portfolio">
       {

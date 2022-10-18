@@ -89,15 +89,16 @@
   }
 
   .Mobile-List {
-    height: 75vh;
+    height: 90vh;
     font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 15%;
+    gap: 20%;
     align-items: center;
     position: absolute;
-    top: 15%;
+
+    /* top: 15%; */
   }
 
   .Mobile-List a {
@@ -108,7 +109,7 @@
     font-size: 32px;
     position: absolute;
     right: 11%;
-    top: 1%;
+    top: 2%;
   }
 
   .mobile {

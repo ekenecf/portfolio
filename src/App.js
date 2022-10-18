@@ -32,16 +32,14 @@ function App() {
     },
   ];
   return (
-    <div className="headerDark">
-      <Router>
-        <Header />
-        <Routes>
-          {links.map((link) => (
-            <Route key={link.id} exact path={link.to} element={<link.element />} />
-          ))}
-        </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        {links.map((link) => (
+          <Route key={link.id} exact path={link.to} element={<link.element />} />
+        ))}
+      </Routes>
+    </Router>
   );
 }
 export default App;
