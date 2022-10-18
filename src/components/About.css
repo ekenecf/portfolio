@@ -152,7 +152,7 @@
     margin: 0;
     padding: 0;
     width: 92%;
-    height: 58vh;
+    height: max-content;
     margin-left: 4%;
   }
 
