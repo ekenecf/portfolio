@@ -8,7 +8,7 @@ This is my portfolio site to provide with a personal record of my success or imp
 
 ## Live Link
 
-[Live Link](https://startling-beignet-56b4c5.netlify.app/)
+[Live Link](https://ekenecf.netlify.app/)
 
 ## Built With
 
