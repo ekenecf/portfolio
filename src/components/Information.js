@@ -32,8 +32,8 @@ const info = {
   bio: "Hello! My name is Nwachukwu Ekene. I am a full-stack developer in microverse a remote organisation that uses pair programming and real-world projects to teach development. Here, I code every day with other developers globally having the ability to demonstrate enough coding skills to pass the rigorous acceptance rate. I've spent several months immersed in remote development, building from landing pages to Rails APIs. I enjoy long walks on the beach and playing chess.",
   skills:
         {
-          proficientWith: ['javascript', 'react', 'redux', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma', 'Ruby', 'Ruby on Rails', 'Postgresql'],
-          exposedTo: ['ReactNative', 'NodeJs'],
+          proficientWith: ['javascript', 'reactJs', 'reduxJs', 'NodeJs', 'expressJs', 'git', 'Tailwindcss', 'html5', 'css3', 'Ruby', 'Ruby on Rails', 'Postgresql'],
+          exposedTo: ['ReactNative', 'MongoDB'],
         },
   hobbies: [
     {
@@ -77,7 +77,7 @@ const info = {
       image: image4,
     },
     {
-      title: 'Rails Church Database App',
+      title: 'Church Database App',
       live: 'https://stcharlescyon.herokuapp.com/',
       source: 'https://github.com/ekenecf/my-church-app',
       image: image5,
