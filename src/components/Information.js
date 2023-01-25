@@ -5,6 +5,7 @@ import image4 from '../assets/space-x.png';
 import image5 from '../assets/churchAPP_API.png';
 import image6 from '../assets/dictionary_online.png';
 import image7 from '../assets/covid19_snapshot.png';
+import image8 from '../assets/demoSite.png';
 
 const info = {
   miniBio: [
@@ -99,6 +100,12 @@ const info = {
       live: 'https://ekenemathmagician.netlify.app/',
       source: 'https://github.com/ekenecf/math-magician',
       image: image1,
+    },
+    {
+      title: 'Demo app with Authorization and authentication',
+      live: 'https://wazobia-nigeria.netlify.app/',
+      source: 'https://github.com/ekenecf/engFrontend',
+      image: image8,
     },
   ],
 };
