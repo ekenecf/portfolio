@@ -66,6 +66,18 @@ const info = {
       image: image2,
     },
     {
+      title: 'Demo app with Authorization and authentication',
+      live: 'https://wazobia-nigeria.netlify.app/',
+      source: 'https://github.com/ekenecf/engFrontend',
+      image: image8,
+    },
+    {
+      title: 'Demo app with Authorization and authentication backend',
+      live: 'https://wazobia.onrender.com/',
+      source: 'https://github.com/ekenecf/engBackend',
+      image: image8,
+    },
+    {
       title: 'Rails Budget App',
       live: 'https://ekenebudgetapp.herokuapp.com/',
       source: 'https://github.com/ekenecf/Budget-App',
@@ -101,12 +113,7 @@ const info = {
       source: 'https://github.com/ekenecf/math-magician',
       image: image1,
     },
-    {
-      title: 'Demo app with Authorization and authentication',
-      live: 'https://wazobia-nigeria.netlify.app/',
-      source: 'https://github.com/ekenecf/engFrontend',
-      image: image8,
-    },
+
   ],
 };
 export default info;
