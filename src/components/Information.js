@@ -75,7 +75,7 @@ const info = {
       title: 'Demo app with Authorization and authentication backend',
       live: 'https://wazobia.onrender.com/',
       source: 'https://github.com/ekenecf/engBackend',
-      image: image8,
+      image: "image8",
     },
     {
       title: 'Rails Budget App',
