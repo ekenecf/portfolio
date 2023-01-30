@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 import Home from "./components/Home";
 import About from "./components/About";
@@ -46,7 +46,12 @@ function App() {
       }}
     >
       <Router>
-        <GiHamburgerMenu onClick={changeColor} />
+        {
+          isActive ?         
+           <MdLightMode style={{ fontSize: '30px', cursor: 'pointer'}} onClick={changeColor} /> :
+          <MdDarkMode style={{ fontSize: '30px', cursor: 'pointer'}} onClick={changeColor} />
+        }
+        
         <Header prop={isActive} />
 
         <Routes>
