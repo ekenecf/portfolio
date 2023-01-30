@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { GiHamburgerMenu } from "react-icons/gi";
-import PropTypes from "prop-types";
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import PropTypes from 'prop-types';
 
-import MobileMenu from "./MobileMenu";
-import "./Header.css";
+import MobileMenu from './MobileMenu';
+import './Header.css';
 
 function Header({ prop }) {
   const [changeMode, setchangeMode] = useState(false);
@@ -20,7 +20,7 @@ function Header({ prop }) {
         <ul className="navigation_list">
           <li>
             <NavLink
-              style={{ backgroundColor: prop ? "white" : "black" }}
+              style={{ backgroundColor: prop ? 'white' : 'black' }}
               to="/"
             >
               Home
@@ -28,7 +28,7 @@ function Header({ prop }) {
           </li>
           <li>
             <NavLink
-              style={{ backgroundColor: prop ? "white" : "black" }}
+              style={{ backgroundColor: prop ? 'white' : 'black' }}
               to="/about"
             >
               About me
@@ -36,7 +36,7 @@ function Header({ prop }) {
           </li>
           <li>
             <NavLink
-              style={{ backgroundColor: prop ? "white" : "black" }}
+              style={{ backgroundColor: prop ? 'white' : 'black' }}
               to="/portfolio"
             >
               Portfolio
@@ -44,7 +44,7 @@ function Header({ prop }) {
           </li>
           <li>
             <NavLink
-              style={{ backgroundColor: prop ? "white" : "black" }}
+              style={{ backgroundColor: prop ? 'white' : 'black' }}
               to="/contactMe"
             >
               Contact Me
@@ -58,7 +58,7 @@ function Header({ prop }) {
             onClick={handleChange}
             onKeyDown={handleChange}
           >
-            {changeMode ? "" : <GiHamburgerMenu />}
+            {changeMode ? '' : <GiHamburgerMenu />}
           </div>
         </div>
         {changeMode ? (
