@@ -118,5 +118,5 @@ input:focus {
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
 }

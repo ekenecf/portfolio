@@ -1,45 +1,66 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-import Home from './components/Home';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Header from './components/Header';
-import Form from './components/Form';
-import './components/Header.css';
+import Home from "./components/Home";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Header from "./components/Header";
+import Form from "./components/Form";
+import "./components/Header.css";
 
 function App() {
+  const [isActive, setIsActive] = useState(false);
+  const changeColor = () => {
+    setIsActive(!isActive);
+  };
+
   const links = [
     {
       id: 1,
-      to: '/',
+      to: "/",
       element: Home,
     },
     {
       id: 2,
-      to: '/about',
+      to: "/about",
       element: About,
     },
     {
       id: 3,
-      to: '/portfolio',
+      to: "/portfolio",
       element: Portfolio,
     },
     {
       id: 4,
-      to: '/contactMe',
+      to: "/contactMe",
       element: Form,
     },
   ];
   return (
-    <Router>
-      <Header />
-      <Routes>
-        {links.map((link) => (
-          <Route key={link.id} exact path={link.to} element={<link.element />} />
-        ))}
-      </Routes>
-    </Router>
+    <div
+      style={{
+        background: isActive ? "black" : "#f8f8f8",
+        height: "max-content",
+        color: isActive ? "#f8f8f8" : "black",
+      }}
+    >
+      <Router>
+        <GiHamburgerMenu onClick={changeColor} />
+        <Header prop={isActive} />
+
+        <Routes>
+          {links.map((link) => (
+            <Route
+              key={link.id}
+              exact
+              path={link.to}
+              element={<link.element />}
+            />
+          ))}
+        </Routes>
+      </Router>
+    </div>
   );
 }
 export default App;

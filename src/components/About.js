@@ -12,7 +12,7 @@ function About() {
   });
 
   return (
-    <div>
+    <div className="aboutMe">
       <div
         className="developer_about"
         data-aos="zoom-in-up"
@@ -37,7 +37,7 @@ function About() {
       </div>
       <div
         className="developer_skills"
-        data-aos="fade-left"
+        data-aos="zoom-out-down"
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"

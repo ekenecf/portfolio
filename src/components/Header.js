@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import MobileMenu from './MobileMenu';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import PropTypes from "prop-types";
 
-import './Header.css';
+import MobileMenu from "./MobileMenu";
+import "./Header.css";
 
-function Header() {
+function Header({ prop }) {
   const [changeMode, setchangeMode] = useState(false);
 
   const handleChange = () => {
@@ -18,45 +19,60 @@ function Header() {
       <nav className="navigation">
         <ul className="navigation_list">
           <li>
-            <NavLink to="/">
+            <NavLink
+              style={{ backgroundColor: prop ? "white" : "black" }}
+              to="/"
+            >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about">
+            <NavLink
+              style={{ backgroundColor: prop ? "white" : "black" }}
+              to="/about"
+            >
               About me
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio">
+            <NavLink
+              style={{ backgroundColor: prop ? "white" : "black" }}
+              to="/portfolio"
+            >
               Portfolio
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contactMe">
+            <NavLink
+              style={{ backgroundColor: prop ? "white" : "black" }}
+              to="/contactMe"
+            >
               Contact Me
             </NavLink>
           </li>
-
         </ul>
         <div className="hamburger">
-          <div role="button" tabIndex={0} onClick={handleChange} onKeyDown={handleChange}>
-            {
-              changeMode ? '' : <GiHamburgerMenu />
-            }
+          <div
+            role="button"
+            tabIndex={0}
+            onClick={handleChange}
+            onKeyDown={handleChange}
+          >
+            {changeMode ? "" : <GiHamburgerMenu />}
           </div>
         </div>
-        {
-            changeMode ? (
-              <div className="MobileContainer">
-                <MobileMenu CancelMenu={handleChange} />
-              </div>
-            )
-              : null
-          }
+        {changeMode ? (
+          <div className="MobileContainer">
+            <MobileMenu CancelMenu={handleChange} prop={prop} />
+          </div>
+        ) : null}
       </nav>
     </header>
   );
 }
+
+Header.propTypes = {
+  prop: PropTypes.bool.isRequired,
+};
 
 export default Header;
