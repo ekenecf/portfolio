@@ -31,11 +31,23 @@ const info = {
     },
   ],
   bio: "Hello! My name is Nwachukwu Ekene. I am a full-stack developer in microverse a remote organisation that uses pair programming and real-world projects to teach development. Here, I code every day with other developers globally having the ability to demonstrate enough coding skills to pass the rigorous acceptance rate. I've spent several months immersed in remote development, building from landing pages to Rails APIs. I enjoy long walks on the beach and playing chess.",
-  skills:
-        {
-          proficientWith: ['javascript', 'reactJs', 'reduxJs', 'NodeJs', 'expressJs', 'git', 'Tailwindcss', 'html5', 'css3', 'Ruby', 'Ruby on Rails', 'Postgresql'],
-          exposedTo: ['ReactNative', 'MongoDB'],
-        },
+  skills: {
+    proficientWith: [
+      'javascript',
+      'reactJs',
+      'reduxJs',
+      'NodeJs',
+      'expressJs',
+      'git',
+      'Tailwindcss',
+      'html5',
+      'css3',
+      'Ruby',
+      'Ruby on Rails',
+      'Postgresql',
+    ],
+    exposedTo: ['ReactNative', 'MongoDB'],
+  },
   hobbies: [
     {
       label: 'playing chess',
@@ -75,7 +87,7 @@ const info = {
       title: 'Demo app with Authorization and authentication backend',
       live: 'https://wazobia.onrender.com/',
       source: 'https://github.com/ekenecf/engBackend',
-      image: image8,
+      image: 'image8',
     },
     {
       title: 'Rails Budget App',
@@ -113,7 +125,6 @@ const info = {
       source: 'https://github.com/ekenecf/math-magician',
       image: image1,
     },
-
   ],
 };
 export default info;

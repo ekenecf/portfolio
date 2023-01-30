@@ -9,7 +9,6 @@
   display: flex;
   align-items: center;
   font-family: sans-serif;
-  background-color: #f1f1f1;
   margin-left: 12%;
 }
 
@@ -66,6 +65,7 @@
   transition: 0.8s;
   transform: translateY(-100px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  background-color: #f1f1f1;
 }
 
 .container .card:hover .slide.slide2 {
